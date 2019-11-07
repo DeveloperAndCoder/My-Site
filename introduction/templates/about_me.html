@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block page_content %}
+{% load static %}
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/intro.css' %}">
+  </head>
+  <body style="overflow-y:scroll;">
+    
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To My Site!</div>
+                <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#introduction">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Portfolio Grid -->
+    <section class="bg-light page-section" id="introduction">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Introduction</h2>
+            <h3 class="section-subheading text-muted">Hi I am Anurag Shah. I am pursuing CSE with minor in Specialization in AI from IIT Jodhpur and am currently in my final year. Enough of talk, please explore the site to know more about me.</h3>
+            </div>
+        </div>
+    </section>
+      
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+    <!-- About -->
+    <section class="page-section" id="about">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About ME</h2>
+            <h3 class="section-subheading text-muted"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+            <ul class="timeline">
+                <li>
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="{% static 'img/1.jpg' %}" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                    <h4>20 June, 1998</h4>
+                    <h4 class="subheading">Hello World!</h4>
+                    </div>
+                    <div class="timeline-body">
+                    <p class="text-muted">This day I was born at Vadodara, Gujarat.</p>
+                    </div>
+                </div>
+                </li>
+                <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="{% static 'img/2.jpg' %}" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                    <h4>June 2016</h4>
+                    <h4 class="subheading">Got Admission in IIT Jodhpur</h4>
+                    </div>
+                    <div class="timeline-body">
+                    <p class="text-muted">After 2 years of rigorous training at IIT ASHRAM I cracked JEE Advanced paper and secured a rank of 2473 AIR. I got admission in IIT Jodhpur CSE branch</p>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                    <h4>December, 2018</h4>
+                    <h4 class="subheading">ICPC 2019</h4>
+                    </div>
+                    <div class="timeline-body">
+                    <p class="text-muted">Represented IIT Jodhpur in ICPC Kharagpur Regionals. Secured a rank of 30 out of 84 teams.</p>
+                    </div>
+                </div>
+                </li>
+                <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src="{% static 'img/4.jpg' %}" alt="">
+                </div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                    <h4>July 2019</h4>
+                    <h4 class="subheading">Completed my summer internship at Amazon, Bangalore</h4>
+                    </div>
+                    <div class="timeline-body">
+                    <p class="text-muted">I learnt new technologies, met a lot of people and developed as a professional at Amazon. It was an amazing experience.</p>
+                    </div>
+                </div>
+                </li>
+                <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>Here
+                    <br>is my
+                    <br>Story!</h4>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        </section>
+    
+    <section class="bg-light page-section" id="introduction">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Proficiency in <br>Languages I share with computers</h2>
+                <div class="progress" style="height:20px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%; font-size:20px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">C++</div>
+                </div>
+                <div class="progress" style="height:20px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%; font-size:20px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Python</div>
+                </div>
+                <div class="progress" style="height:20px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%; font-size:20px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Java</div>
+                </div>
+                <div class="progress" style="height:20px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%; font-size:20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--
+    <div id = "Head">
+    <p style="color: white; position: relative; top: 50%; transform: translateY(-50%);">WELCOME</p>
+    </div>
+    <p stle="color:red;">Hello, I am Anurag Shah, final year undergrad pursuing CSE and Specialization in AI as my degree at IIT Jodhpur.</p>
+    --->
+  </body>
+</html>
+
+{% endblock %}
