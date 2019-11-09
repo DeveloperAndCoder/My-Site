@@ -3,6 +3,9 @@ from projects.models import Project
 
 def project_index(request):
     projects = Project.objects.all()
+    truncate_at = 50
+    for project in projects:
+        project.description = (project.description[:truncate_at] + '...') if len(project.description) > truncate_at else project.description
     context = {
         'projects': projects
     }

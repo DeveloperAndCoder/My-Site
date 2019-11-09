@@ -4,9 +4,54 @@
 <html>
   <head>
     <title>Home</title>
+<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
+<!-- jquery -->
+<!--     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="{% static 'css/intro.css' %}">
+    <script type='text/javascript' src="{% static 'js/agency.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/agency.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/contact_me.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   </head>
   <body style="overflow-y:scroll;">
+  
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#">Anurag Shah</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#programming">Programming</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#connect">Connect</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
     
     <header class="masthead">
         <div class="container">
@@ -18,12 +63,12 @@
         </div>
     </header>
     
-    <!-- Portfolio Grid -->
+    <!-- Introduction -->
     <section class="bg-light page-section" id="introduction">
         <div class="container">
             <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Introduction</h2>
-            <h3 class="section-subheading text-muted">Hi I am Anurag Shah. I am pursuing CSE with minor in Specialization in AI from IIT Jodhpur and am currently in my final year. Enough of talk, please explore the site to know more about me.</h3>
+            <h3 class="section-subheading text-muted">Hi I am Anurag Shah. I am pursuing CSE with minor in Specialization in AI from IIT Jodhpur and am currently in my final year. Please explore the site to know more about me.</h3>
             </div>
         </div>
     </section>
@@ -110,8 +155,8 @@
         </div>
         </div>
         </section>
-    
-    <section class="bg-light page-section" id="introduction">
+    <!--  Programming    -->
+    <section class="bg-light page-section" id="programming">
         <div class="container">
             <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Proficiency in <br>Languages I share with computers</h2>
@@ -128,6 +173,44 @@
                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%; font-size:20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="bg-light page-section" id="Codeforces Graph">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">My Codeforces Profile</h2>
+            <h3 class="section-subheading text-muted">I love competitive programming and I am a regular coder on codeforces. My userId is <b><a href = "https://codeforces.com/profile/Ghost0fSparta" target="_blank">Ghost0fSparta</b></a></h3>
+            <img src="{% static 'img/cf_ratings.png' %}">
+        </div>
+    </section>
+    <!--  Connect    -->
+    <section class="bg-light page-section" id="connect">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Lets connect!</h2>
+                <h3 class="section-subheading text-muted">I'll love to hear from you!</h3>
+            </div>
+            <div class="team-member">
+            <img class="mx-auto rounded-circle" src="{% static 'img/team/1.jpeg' %}" alt="">
+            <h4>Anurag Shah</h4>
+            <p class="text-muted">Software Developer Engineer</p>
+            <ul class="list-inline social-buttons ">
+              <li class="list-inline-item">
+                <a href="#" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/anurag.shah.5076798" target="_blank">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/anurag-shah-aa4526141/" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
     </section>
   <!--
